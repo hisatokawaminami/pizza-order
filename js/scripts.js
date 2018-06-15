@@ -37,7 +37,14 @@ $(function(){
       $(".toppings").text(newPizza.toppings);
       $(".price").text("$"+final.toFixed(2));
       $(".output").show();
+      // $("#formOne").hide();
       console.log(newPizza.total)
     });
+
+  // $("#return").click(function(){
+  // location.reload();
+
+  // })
+
 
   });

@@ -1,7 +1,19 @@
 body {
   background-color: lightblue;
+
 }
 
 .output {
   display: none;
+}
+ .jumbotron {
+   background-image: url(../img/pizza2.jpg);
+   background-position: 10% 70%;
+   background-size: cover;
+   color: cyan;
+ }
+
+img {
+  height: 200px;
+
 }

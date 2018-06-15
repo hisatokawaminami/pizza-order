@@ -10,20 +10,17 @@
 </head>
 <body>
   <div class="container">
+    <div class="jumbotron">
     <h1>Order Pizza</h1>
-
+    </div>
     <form id=formOne>
       <div class="row col-md-3">
-
-
       <div class="form-group">
         <label for="name">Your Name:</label>
         <input type="text" class="form-control" id="name">
       </div>
     </div><br><br><br><br>
-
     <div class="row">
-
     <p><strong>Select Size:</strong></p>
       <div class="radio">
         <label><input type="radio" name="size" value="Small" checked>Small (10") | $10</label>
@@ -35,43 +32,34 @@
         <label><input type="radio" name="size" value="Large">Large (14") | $20</label>
       </div>
     </div>
-
     <div class="row">
-
     <p><strong>Choose Toppings:  $1.50 each</strong></p>
     <div class="col-md-4">
-
         <input type="checkbox" name="topping" value="Cheese">Cheese<br>
+        <!-- <img src="img/cheese.jpg" alt="Cheese" class="img-responsive thumbnail"> -->
         <input type="checkbox" name="topping" value="Pepperoni">Pepperoni<br>
+        <!-- <img src="img/pepperoni.jpeg" alt="pepperoni" class="img-responsive thumbnail"> -->
         <input type="checkbox" name="topping" value="Chicken">Chicken<br>
+        <!-- <img src="img/chicken.jpg" alt="chicken" class="img-responsive thumbnail"> -->
       </div>
-
     <div class="col-md-4">
         <input type="checkbox" name="topping" value="Mushroom">Mushroom<br>
         <input type="checkbox" name="topping" value="Spinich">Spinich<br>
       </div>
-
       <div class="col-md-4">
           <input type="checkbox" name="topping" value="Olives">Olives<br>
           <input type="checkbox" name="topping" value="Artichoke">Artichoke<br>
       </div>
     </div>
-
       <button type="submit" class="btn btn-success" id="showPrice">Price Check</button>
     </form><br>
-
-
-
     <div class="output">
       <p><span class = "name"></span>, here is the order detail:</p>
-
-
         <p>Size: <span class="size"></span></p>
         <p>Toppings: <span class="toppings"></span></p>
         <p>Price: <span class="price"></span></p>
-
-
-      </div>
+        <!-- <button type="button" class="btn btn-success" id="return">Return</button> -->
+    </div>
     </div>
   </body>
   </html>

@@ -9,62 +9,65 @@
   <title>Order Pizza</title>
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container">
     <h1>Order Pizza</h1>
 
     <form id=formOne>
+      <div class="row col-md-3">
+
 
       <div class="form-group">
         <label for="name">Your Name:</label>
         <input type="text" class="form-control" id="name">
       </div>
+    </div><br><br><br><br>
 
-<!-- radio buttons 2 -->
+    <div class="row">
 
-      <div class="radio"><br>
-        <p><strong>Select Size:</strong></p>
-
+    <p><strong>Select Size:</strong></p>
       <div class="radio">
-        <label><input type="radio" name="" value="">Small</label>
+        <label><input type="radio" name="size" value="Small" checked>Small (10") | $10</label>
       </div>
       <div class="radio">
-        <label><input type="radio" name="" value="">Medium</label>
+        <label><input type="radio" name="size" value="Medium">Medium (12") | $15</label>
       </div>
       <div class="radio">
-        <label><input type="radio" name="" value="">Large</label>
+        <label><input type="radio" name="size" value="Large">Large (14") | $20</label>
       </div>
-<!-- radio buttons 2 -->
+    </div>
 
-<!-- radio buttons 2 -->
-      <div class="radio"></br>
-        <p><strong>Select Toppings:</strong></p>
-        <label for="computerType">
-          <input type="radio" name="toppings" value="" checked>Cheese</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="toppings" value="">Pepperoni</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="toppings" value="">Chicken</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="toppings" value="">Mushroom</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="toppings" value="">Spinich</label>
-      </div><br>
-<!-- radio buttons 2-->
+    <div class="row">
 
+    <p><strong>Toppings: $1.50 each</strong></p>
+    <div class="col-md-4">
 
+        <input type="checkbox" name="topping" value="Cheese">Cheese<br>
+        <input type="checkbox" name="topping" value="Pepperoni">Pepperoni<br>
+        <input type="checkbox" name="topping" value="Chicken">Chicken<br>
+      </div>
 
-      <button type="submit" class="btn btn-success">Find Your Price</button>
+    <div class="col-md-4">
+        <input type="checkbox" name="topping" value="Mushroom">Mushroom<br>
+        <input type="checkbox" name="topping" value="Spinich">Spinich<br>
+      </div>
+
+      <div class="col-md-4">
+          <input type="checkbox" name="topping" value="Olives">Olives<br>
+          <input type="checkbox" name="topping" value="Artichoke">Artichoke<br>
+      </div>
+    </div>
+
+      <button type="submit" class="btn btn-success" id="showPrice">Price Check</button>
     </form><br>
 
-      <p><span class = name></span>, here is the price for your order:</p>
-      <div class="output">
 
-        <p>Size: <span class="title"></span></p>
-        <p>Toppings: <span class="time"></span></p>
+
+    <div class="output">
+      <p><span class = "name"></span>, here is the price for your order:</p>
+
+
+        <p>Size: <span class="size"></span></p>
+        <p>Toppings: <span class="toppings"></span></p>
         <p>Price: <span class="price"></span></p>
 
 
